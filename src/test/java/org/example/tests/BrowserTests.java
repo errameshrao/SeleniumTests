@@ -25,6 +25,7 @@ public class BrowserTests {
         driver = new ChromeDriver();
         driver.get(URL);
         driver.manage().window().maximize();
+        System.out.println("Browser started");
     }
 
     @Test
