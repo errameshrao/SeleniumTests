@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="First Test">
     <test name="Open browser">
+        <parameter name="URL" value="https://book4time.com/"></parameter>
         <classes>
             <class name="org.example.tests.BrowserTests"/>
         </classes>

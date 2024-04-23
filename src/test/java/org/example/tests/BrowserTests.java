@@ -14,14 +14,13 @@ import org.testng.annotations.Test;
 
 public class BrowserTests {
 
-    private static final String URL = "https://book4time.com/";
-
     WebDriver driver;
 
     private SetupDriver setupDriver;
 
+    @Parameters("URL")
     @BeforeClass
-    public void setUp() {
+    public void setUp(String URL) {
         driver = new ChromeDriver();
         driver.get(URL);
         driver.manage().window().maximize();
